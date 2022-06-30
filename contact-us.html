@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Contact Page</title>
+<style>
+          ul{
+        list-style-type:none;
+        margin:0px;
+        padding:10px;
+        background-color:black;
+        overflow: hidden;
+    }
+
+    li{
+        float:left;
+    }
+    
+    li a{
+        color: white;
+        font-size: 20px;
+        padding:35px 30px;
+        text-decoration: none;
+        text-align: center;
+    }
+    li a:hover{
+        color:blue;
+    }
+	  h1, h2{
+        background-color:lightblue;
+        padding:20px;
+        height:50px;
+        top:20px;
+        font-family: monospace;
+            }
+			form{
+			font-size:30px;
+			 font-family;monospace;
+			 }
+			 fieldset{
+			  background-color:lightpink;
+			  }
+			  legend{
+			 background-color:aqua;
+			 color:blue;
+			 }
+			 .submit{
+			width:100px;
+			height:60px;
+			background-color:blue;
+			 }
+</style>
+</head>
+<body>
+
+    <ul>
+	
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+               <li><a href="activities.html">Activities</a></li>
+               </ul>
+			   <script>
+			   function validation(){
+			   var x;
+			   x = document.forms["myform"]["fname"].value;
+			  } 
+			  if(x="")
+			  {
+			  windows.alert("Enter the name")
+			  }
+			  
+			   </script>
+			   <h1>
+			   This is the contact page
+			   </h1>
+			   <form method="post" name="myform" onsubmit="validation()">
+			   
+			  <fieldset>
+			  <legend>
+			  Contact Form
+			  </legend>
+			  <label> First Name</label>
+			  <input type="name" required ><br>
+			  <label> Last Name</label>
+			  <input type="name" required ><br>
+			  <label>Email</label>
+			  <input type="email" required><br>
+			  <label>What is your problem?</label>
+			  <input type="text" required><br>
+			  <input type="submit" value="Submit here" class="submit">
+			   </fieldset>
+			   </form>
+			   </html>
